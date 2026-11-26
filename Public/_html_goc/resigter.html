@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Đăng ký thành viên - RAMBO STORE</title>
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Theme Configuration verbatim -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#afc6ff",
+            "secondary-fixed": "#ffe174",
+            "on-secondary-container": "#6f5c00",
+            "tertiary-fixed": "#d9e2ff",
+            "on-surface-variant": "#5d3f3b",
+            "on-tertiary-container": "#ffffff",
+            "on-primary-fixed": "#410001",
+            "surface-tint": "#c0000c",
+            "inverse-on-surface": "#f3f0ef",
+            "secondary-fixed-dim": "#eac300",
+            "surface": "#fcf9f8",
+            "error-container": "#ffdad6",
+            "on-background": "#1b1b1c",
+            "outline-variant": "#e7bdb7",
+            "tertiary": "#0b58c2",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#ffb4aa",
+            "primary-fixed": "#ffdad5",
+            "surface-container-low": "#f6f3f2",
+            "surface-container": "#f0eded",
+            "on-primary-container": "#ffffff",
+            "surface-container-highest": "#e5e2e1",
+            "primary": "#be000c",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#004298",
+            "on-surface": "#1b1b1c",
+            "error": "#ba1a1a",
+            "secondary-container": "#fed400",
+            "tertiary-container": "#3772dd",
+            "inverse-surface": "#303030",
+            "on-secondary-fixed-variant": "#554500",
+            "secondary": "#705d00",
+            "on-error": "#ffffff",
+            "background": "#fcf9f8",
+            "surface-container-high": "#eae7e7",
+            "on-primary-fixed-variant": "#930007",
+            "surface-variant": "#e5e2e1",
+            "surface-bright": "#fcf9f8",
+            "on-tertiary-fixed": "#001943",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed": "#221b00",
+            "primary-container": "#e52521",
+            "outline": "#926f6a",
+            "inverse-primary": "#ffb4aa",
+            "surface-dim": "#dcd9d9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": [
+              "Plus Jakarta Sans"
+            ],
+            "label-lg": [
+              "Space Grotesk"
+            ],
+            "headline-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "display-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "label-sm": [
+              "Space Grotesk"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "label-md": [
+              "Space Grotesk"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-xl": [
+              "Plus Jakarta Sans"
+            ],
+            "display-lg-mobile": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "headline-xl-mobile": [
+              "1.75rem",
+              {
+                "lineHeight": "1.25",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "800"
+              }
+            ],
+            "label-lg": [
+              "0.875rem",
+              {
+                "lineHeight": "1",
+                "letterSpacing": "0.04em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-sm": [
+              "1.125rem",
+              {
+                "lineHeight": "1.4",
+                "letterSpacing": "0",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg": [
+              "1.5rem",
+              {
+                "lineHeight": "1.3",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg": [
+              "3.5rem",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.03em",
+                "fontWeight": "800"
+              }
+            ],
+            "label-sm": [
+              "0.6875rem",
+              {
+                "lineHeight": "1",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-sm": [
+              "0.875rem",
+              {
+                "lineHeight": "1.45",
+                "letterSpacing": "0",
+                "fontWeight": "400"
+              }
+            ],
+            "label-md": [
+              "0.75rem",
+              {
+                "lineHeight": "1",
+                "letterSpacing": "0.06em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "1rem",
+              {
+                "lineHeight": "1.5",
+                "letterSpacing": "0",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "1.125rem",
+              {
+                "lineHeight": "1.6",
+                "letterSpacing": "-0.005em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "2.25rem",
+              {
+                "lineHeight": "1.2",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg-mobile": [
+              "2.25rem",
+              {
+                "lineHeight": "1.15",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .brick-btn-shadow {
+      box-shadow: 0 4px 16px -2px rgba(229, 37, 33, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container">
+  <!-- TOP HEADER (Shared Component TopNavBar adaptation with Logo RAMBO STORE) -->
+  <header class="bg-surface-container-lowest shadow-sm sticky top-0 z-50">
+    <div class="w-full mx-auto px-margin-mobile md:px-margin max-w-7xl flex flex-col justify-between py-space-sm">
+      <div class="flex items-center justify-between gap-space-md">
+        <!-- Logo Branding -->
+        <a class="flex items-center gap-space-xs transition-transform active:scale-95" href="#">
+          <img alt="Logo RAMBO STORE" class="h-10 md:h-12 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/ALJJyrBv1johu_oiQLe1bsJ7yq0QpLBJTknY-qQQsGAWIfcXvyA3jYsXwGGyHS0kWKufKUs9a38fpLmA_cor0KxLGsDx6I46SZLxXAwVitHfWxe3aiCH6wx7HldvXOFCZBs-INFSflHHs-k8blf87QxMq0s_8YPag39vbBNVmCXsyH4g7aKPd1RrSX0GjJXsiVKdb9rPKm36rj8TgIHmzfG9wwwO-mYXUFHOspdR3qGA1EOtuA" />
+        </a>
+        <!-- Top Navigation Links (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-6">
+          <a class="text-on-surface font-medium hover:text-primary pb-1 font-body-sm text-body-sm transition-colors"
+            href="#">Trang chủ</a>
+          <a class="text-on-surface font-medium hover:text-primary pb-1 font-body-sm text-body-sm transition-colors"
+            href="#">Tất cả sản phẩm</a>
+          <a class="text-on-surface font-medium hover:text-primary pb-1 font-body-sm text-body-sm transition-colors"
+            href="#">LEGO Themes</a>
+          <a class="text-on-surface font-medium hover:text-primary pb-1 font-body-sm text-body-sm transition-colors"
+            href="#">Khuyến mãi Hot</a>
+          <a class="text-on-surface font-medium hover:text-primary pb-1 font-body-sm text-body-sm transition-colors"
+            href="#">Bộ mới về</a>
+          <a class="text-on-surface font-medium hover:text-primary pb-1 font-body-sm text-body-sm transition-colors"
+            href="#">Giới thiệu &amp; Cửa hàng</a>
+        </nav>
+        <!-- Trailing Actions -->
+        <div class="flex items-center gap-3">
+          <button aria-label="Yêu thích"
+            class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded-full transition-all duration-200"
+            type="button">
+            <span class="material-symbols-outlined text-xl">favorite</span>
+          </button>
+          <button aria-label="Giỏ hàng"
+            class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded-full transition-all duration-200 relative"
+            type="button">
+            <span class="material-symbols-outlined text-xl">shopping_cart</span>
+            <span
+              class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-sm text-[10px] flex items-center justify-center rounded-full">0</span>
+          </button>
+          <a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border-b-2 border-primary text-primary font-bold bg-surface-container-low font-label-md text-label-md transition-all active:scale-95"
+            href="#">
+            <span class="material-symbols-outlined text-lg">person</span>
+            <span class="hidden sm:inline">Tài khoản</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN REGISTRATION SECTION: Split Screen Balanced Layout -->
+  <main class="flex-grow flex items-center justify-center py-6 md:py-10 px-margin-mobile md:px-margin">
+    <div
+      class="w-full max-w-7xl mx-auto bg-surface-container-lowest rounded-xl shadow-lg border border-black/5 overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[720px]">
+      <!-- LEFT HALF: Branding Banner (lg:col-span-5 or lg:col-span-6) -->
+      <section
+        class="lg:col-span-6 relative flex flex-col justify-between p-6 sm:p-10 text-on-primary overflow-hidden min-h-[460px] lg:min-h-full">
+        <!-- Background Imagery with Dark Tactical Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img alt="LEGO Millennium Falcon &amp; Porsche 911 RSR"
+            class="w-full h-full object-cover object-center transform scale-105 transition-transform duration-1000 ease-out hover:scale-100"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgzsYbEM_2KSExoF2_2v2nxc7Y9F55eAsodpFWrvuJBANV4cnm7mDrRKUmfq_2lVvgiJs1Bi8B4i5d8065g-uP9ZHmJXKQItUnUx3vDWMGIl6o1ObeKuSi8h-gW_ivDOghpaAdzNtjBVevJ8AhGuBMEtDdyhIFTlM6ghefFjTMIBtmSIDZqBKDWs0KvWBIPENaGdste3t_XYQWW9WWOOehUMAuiTOscwRiPsZb_qIF" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-black/40"></div>
+          <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+        </div>
+        <!-- Banner Top Tag -->
+        <div class="relative z-10 flex items-center justify-between">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-inverse-surface/80 backdrop-blur-md border border-secondary-container/40">
+            <span class="material-symbols-outlined text-secondary-container text-base"
+              style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">RAMBO VIP CLUB •
+              100% CHÍNH HÃNG</span>
+          </div>
+          <span
+            class="inline-block px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">
+            ƯU ĐÃI THÀNH VIÊN
+          </span>
+        </div>
+        <!-- Banner Headline & Highlights -->
+        <div class="relative z-10 my-auto py-8">
+          <h1
+            class="font-headline-xl text-headline-xl font-black text-on-primary tracking-tight leading-snug drop-shadow-md">
+            Đăng Ký Thành Viên Nhận Ngay <span
+              class="text-secondary-fixed underline decoration-primary decoration-4 underline-offset-4">Voucher
+              100.000đ</span> &amp; Điểm Thưởng Khởi Đầu
+          </h1>
+          <p class="mt-3 text-white/80 font-body-md text-body-md max-w-lg leading-relaxed">
+            Mở khóa kho tàng sáng tạo vô tận, tích lũy điểm gạch độc quyền và sở hữu các bộ sưu tập Ultimate Collector
+            Series phiên bản giới hạn.
+          </p>
+          <!-- 3 Prominent Benefit Cards -->
+          <div class="mt-8 space-y-3.5">
+            <!-- Benefit 1 -->
+            <div
+              class="flex items-center gap-3.5 p-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+              <div
+                class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">redeem</span>
+              </div>
+              <div>
+                <h2 class="font-headline-sm text-sm text-on-primary font-bold">Quà tặng sinh nhật độc quyền</h2>
+                <p class="font-body-sm text-xs text-white/70">Bộ quà VIP minifigure giới hạn &amp; voucher ưu đãi 15%
+                  vào tháng sinh nhật.</p>
+              </div>
+            </div>
+            <!-- Benefit 2 -->
+            <div
+              class="flex items-center gap-3.5 p-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+              <div
+                class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-xl">local_shipping</span>
+              </div>
+              <div>
+                <h2 class="font-headline-sm text-sm text-on-primary font-bold">Miễn phí vận chuyển đơn đầu tiên</h2>
+                <p class="font-body-sm text-xs text-white/70">Giao hàng hỏa tốc trong 2h tại TP.HCM &amp; Hà Nội, đóng
+                  gói chống sốc đa lớp.</p>
+              </div>
+            </div>
+            <!-- Benefit 3 -->
+            <div
+              class="flex items-center gap-3.5 p-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+              <div
+                class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center text-secondary-fixed shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-xl"
+                  style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+              </div>
+              <div>
+                <h2 class="font-headline-sm text-sm text-on-primary font-bold">Cập nhật thông tin sớm các bộ hiếm</h2>
+                <p class="font-body-sm text-xs text-white/70">Đặc quyền đặt trước 24h đối với Star Wars UCS, Icons,
+                  Technic và Modular.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner Bottom Trust Stat -->
+        <div
+          class="relative z-10 pt-4 border-t border-white/20 flex items-center justify-between font-label-md text-label-md text-white/75">
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary-container text-base">award_star</span> Đối tác phân
+            phối LEGO Vietnam
+          </span>
+          <span class="font-bold text-white tracking-wide">4.9/5 ★ (12.800+ Đánh giá)</span>
+        </div>
+      </section>
+      <!-- RIGHT HALF: Registration Form (lg:col-span-6) -->
+      <section class="lg:col-span-6 p-6 sm:p-10 lg:p-12 flex flex-col justify-center bg-surface-container-lowest">
+        <div class="w-full max-w-md mx-auto">
+          <!-- Form Header -->
+          <div class="mb-6">
+            <h1 class="font-headline-xl text-headline-xl font-extrabold text-on-surface tracking-tight">
+              Tạo Tài Khoản Mới
+            </h1>
+            <p class="mt-1 text-on-surface-variant font-body-sm text-body-sm">
+              Tham gia cùng hơn <strong class="text-primary font-bold">45.000 tín đồ LEGO</strong> trên toàn quốc
+            </p>
+          </div>
+          <!-- Quick Social Sign-up (Google) -->
+          <button
+            class="w-full flex items-center justify-center gap-3 py-2.5 px-4 rounded-lg border border-slate-300 hover:border-inverse-surface bg-white text-on-surface font-headline-sm text-sm font-semibold transition-all duration-200 active:scale-95 shadow-sm"
+            type="button">
+            <svg class="w-5 h-5" viewbox="0 0 24 24">
+              <path
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                fill="#4285F4"></path>
+              <path
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                fill="#34A853"></path>
+              <path
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
+                fill="#FBBC05"></path>
+              <path
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
+                fill="#EA4335"></path>
+            </svg>
+            <span>Đăng ký nhanh bằng Google</span>
+          </button>
+          <!-- Divider -->
+          <div class="relative my-5">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-slate-200"></div>
+            </div>
+            <div class="relative flex justify-center text-xs">
+              <span
+                class="bg-surface-container-lowest px-3 text-on-surface-variant font-label-md text-label-md uppercase">Hoặc
+                điền thông tin</span>
+            </div>
+          </div>
+          <!-- Registration Form Fields -->
+          <form class="space-y-4" onsubmit="event.preventDefault();">
+            <!-- Full Name -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface mb-1.5" for="fullName">
+                Họ và tên <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+                  <span class="material-symbols-outlined text-lg">person</span>
+                </span>
+                <input
+                  class="w-full pl-10 pr-3.5 py-2.5 rounded-lg border border-slate-300 bg-white font-body-sm text-body-sm text-on-surface placeholder:text-slate-400 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all"
+                  id="fullName" name="fullName" placeholder="Ví dụ: Nguyễn Tuấn Anh" required="" type="text" />
+              </div>
+            </div>
+            <!-- Email -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface mb-1.5" for="regEmail">
+                Email <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+                  <span class="material-symbols-outlined text-lg">mail</span>
+                </span>
+                <input
+                  class="w-full pl-10 pr-3.5 py-2.5 rounded-lg border border-slate-300 bg-white font-body-sm text-body-sm text-on-surface placeholder:text-slate-400 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all"
+                  id="regEmail" name="email" placeholder="tuananh@example.com" required="" type="email" />
+              </div>
+            </div>
+            <!-- Phone Number -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface mb-1.5" for="phone">
+                Số điện thoại <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+                  <span class="material-symbols-outlined text-lg">call</span>
+                </span>
+                <input
+                  class="w-full pl-10 pr-3.5 py-2.5 rounded-lg border border-slate-300 bg-white font-body-sm text-body-sm text-on-surface placeholder:text-slate-400 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all"
+                  id="phone" name="phone" placeholder="09xx xxx xxx" required="" type="tel" />
+              </div>
+            </div>
+            <!-- Password -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface mb-1.5" for="regPassword">
+                Mật khẩu <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+                  <span class="material-symbols-outlined text-lg">lock</span>
+                </span>
+                <input
+                  class="w-full pl-10 pr-10 py-2.5 rounded-lg border border-slate-300 bg-white font-body-sm text-body-sm text-on-surface placeholder:text-slate-400 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all"
+                  id="regPassword" name="password" placeholder="Tối thiểu 8 ký tự, gồm chữ và số" required=""
+                  type="password" />
+                <button
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center text-on-surface-variant hover:text-on-surface"
+                  onclick="togglePass('regPassword', 'toggleIcon1')" type="button">
+                  <span class="material-symbols-outlined text-lg" id="toggleIcon1">visibility</span>
+                </button>
+              </div>
+              <!-- Password Strength Indicator (Green) -->
+              <div class="mt-2 flex items-center gap-2">
+                <div class="flex-1 grid grid-cols-4 gap-1.5 h-1.5">
+                  <div class="bg-emerald-500 rounded-full"></div>
+                  <div class="bg-emerald-500 rounded-full"></div>
+                  <div class="bg-emerald-500 rounded-full"></div>
+                  <div class="bg-emerald-500/30 rounded-full"></div>
+                </div>
+                <span class="font-label-sm text-[11px] font-bold text-emerald-600 flex items-center gap-1 shrink-0">
+                  <span class="material-symbols-outlined text-xs"
+                    style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Mạnh (8/10)
+                </span>
+              </div>
+            </div>
+            <!-- Confirm Password -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface mb-1.5" for="confirmPassword">
+                Xác nhận mật khẩu <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+                  <span class="material-symbols-outlined text-lg">lock_reset</span>
+                </span>
+                <input
+                  class="w-full pl-10 pr-10 py-2.5 rounded-lg border border-slate-300 bg-white font-body-sm text-body-sm text-on-surface placeholder:text-slate-400 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all"
+                  id="confirmPassword" name="confirmPassword" placeholder="Nhập lại mật khẩu" required=""
+                  type="password" />
+                <button
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center text-on-surface-variant hover:text-on-surface"
+                  onclick="togglePass('confirmPassword', 'toggleIcon2')" type="button">
+                  <span class="material-symbols-outlined text-lg" id="toggleIcon2">visibility</span>
+                </button>
+              </div>
+            </div>
+            <!-- Checkbox Terms & Conditions (Required) -->
+            <div class="pt-1">
+              <label class="flex items-start gap-2.5 cursor-pointer select-none">
+                <input checked=""
+                  class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container border-slate-300"
+                  required="" type="checkbox" />
+                <span class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                  Tôi đồng ý với <a class="text-primary font-bold hover:underline" href="#">Điều khoản dịch vụ</a> và <a
+                    class="text-primary font-bold hover:underline" href="#">Chính sách bảo mật</a> của RAMBO STORE.
+                </span>
+              </label>
+            </div>
+            <!-- Checkbox Newsletter (Optional) -->
+            <div>
+              <label class="flex items-start gap-2.5 cursor-pointer select-none">
+                <input checked=""
+                  class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container border-slate-300"
+                  type="checkbox" />
+                <span class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                  Đăng ký nhận thông tin khuyến mãi và các bộ LEGO mới qua email
+                </span>
+              </label>
+            </div>
+            <!-- Main CTA Button -->
+            <div class="pt-2">
+              <button
+                class="w-full py-3.5 px-6 rounded-lg bg-primary-container text-on-primary font-headline-sm text-base font-bold brick-btn-shadow hover:-translate-y-0.5 hover:bg-primary transition-all duration-200 active:scale-95 flex items-center justify-center gap-2"
+                type="submit">
+                <span>ĐĂNG KÝ TÀI KHOẢN</span>
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+            <!-- Redirect to Sign In -->
+            <div class="text-center pt-3 border-t border-slate-100">
+              <p class="font-body-sm text-sm text-on-surface-variant">
+                Bạn đã có tài khoản?
+                <a class="text-primary font-bold hover:underline transition-colors ml-1 inline-flex items-center gap-1"
+                  href="#">
+                  Đăng nhập tại đây
+                  <span class="material-symbols-outlined text-sm">login</span>
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- FOOTER (Shared Component Footer verbatim & styled) -->
+  <footer class="bg-surface-container mt-auto">
+    <div class="w-full mx-auto px-margin-mobile md:px-margin py-space-xl max-w-7xl flex flex-col gap-space-lg">
+      <!-- Footer Top Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pb-6 border-b border-black/5">
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Về RAMBO STORE</h3>
+          <ul class="space-y-2">
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">100% Chính Hãng</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Hệ thống showroom</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Giới thiệu &amp; Cửa hàng</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Chính sách &amp; Hỗ trợ</h3>
+          <ul class="space-y-2">
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Giao hàng hỏa tốc</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Đổi trả 30 ngày</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Bảo mật thông tin</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">Dịch vụ khách hàng</h3>
+          <ul class="space-y-2">
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Điều khoản dịch vụ</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Hướng dẫn mua hàng</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                href="#">Tra cứu đơn hàng</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3">RAMBO VIP Club</h3>
+          <p class="font-body-sm text-xs text-on-surface-variant mb-3">Tích lũy điểm gạch trên mỗi đơn hàng và nhận quà
+            độc quyền từ LEGO Đan Mạch.</p>
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span>Thành viên Vàng - 1.250 Điểm gạch</span>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom Row -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="font-body-sm text-xs text-on-surface-variant">
+          © 2024 RAMBO STORE Vietnam. Đối tác phân phối chính hãng LEGO. Giấy phép ĐKKD số 0108888888.
+        </p>
+        <div class="flex items-center gap-4 text-xs font-label-md text-label-md text-on-surface-variant">
+          <span class="inline-flex items-center gap-1 text-emerald-600 font-bold">
+            <span class="material-symbols-outlined text-sm">shield</span> Bảo mật SSL 256-bit
+          </span>
+          <span>Hotline: 1900 8888</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Light Vanilla Script for Interactive Polish -->
+  <script>
+    function togglePass(inputId, iconId) {
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(iconId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+  </script>
+</body>
+
+</html>

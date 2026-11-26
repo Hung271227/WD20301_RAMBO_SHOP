@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thanh toán | RAMBO STORE - LEGO Chính Hãng</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#afc6ff",
+            "secondary-fixed": "#ffe174",
+            "on-secondary-container": "#6f5c00",
+            "tertiary-fixed": "#d9e2ff",
+            "on-surface-variant": "#5d3f3b",
+            "on-tertiary-container": "#ffffff",
+            "on-primary-fixed": "#410001",
+            "surface-tint": "#c0000c",
+            "inverse-on-surface": "#f3f0ef",
+            "secondary-fixed-dim": "#eac300",
+            "surface": "#fcf9f8",
+            "error-container": "#ffdad6",
+            "on-background": "#1b1b1c",
+            "outline-variant": "#e7bdb7",
+            "tertiary": "#0b58c2",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#ffb4aa",
+            "primary-fixed": "#ffdad5",
+            "surface-container-low": "#f6f3f2",
+            "surface-container": "#f0eded",
+            "on-primary-container": "#ffffff",
+            "surface-container-highest": "#e5e2e1",
+            "primary": "#be000c",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#004298",
+            "on-surface": "#1b1b1c",
+            "error": "#ba1a1a",
+            "secondary-container": "#fed400",
+            "tertiary-container": "#3772dd",
+            "inverse-surface": "#303030",
+            "on-secondary-fixed-variant": "#554500",
+            "secondary": "#705d00",
+            "on-error": "#ffffff",
+            "background": "#fcf9f8",
+            "surface-container-high": "#eae7e7",
+            "on-primary-fixed-variant": "#930007",
+            "surface-variant": "#e5e2e1",
+            "surface-bright": "#fcf9f8",
+            "on-tertiary-fixed": "#001943",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed": "#221b00",
+            "primary-container": "#e52521",
+            "outline": "#926f6a",
+            "inverse-primary": "#ffb4aa",
+            "surface-dim": "#dcd9d9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "label-lg": ["Space Grotesk"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Space Grotesk"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Space Grotesk"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "800" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "headline-sm": ["1.125rem", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "700" }],
+            "headline-lg": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "display-lg": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "1", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.45", "letterSpacing": "0", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-md": ["1rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-xl": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "display-lg-mobile": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-shadow-card {
+      box-shadow: 0 4px 16px -2px rgba(30, 30, 30, 0.04), 0 1px 3px 0 rgba(30, 30, 30, 0.02);
+    }
+    .custom-shadow-elevated {
+      box-shadow: 0 12px 28px -4px rgba(229, 37, 33, 0.08), 0 4px 12px -2px rgba(30, 30, 30, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-container selection:text-white">
+<!-- Header đồng bộ Checkout: Logo, Hotline khẩn cấp, SSL Certificate Seal -->
+<header class="bg-surface-container-lowest sticky top-0 z-50 shadow-sm transition-all duration-200">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-3 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3" href="#">
+<img alt="RAMBO STORE" class="h-10 md:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBv1johu_oiQLe1bsJ7yq0QpLBJTknY-qQQsGAWIfcXvyA3jYsXwGGyHS0kWKufKUs9a38fpLmA_cor0KxLGsDx6I46SZLxXAwVitHfWxe3aiCH6wx7HldvXOFCZBs-INFSflHHs-k8blf87QxMq0s_8YPag39vbBNVmCXsyH4g7aKPd1RrSX0GjJXsiVKdb9rPKm36rj8TgIHmzfG9wwwO-mYXUFHOspdR3qGA1EOtuA"/>
+</a>
+<div class="hidden sm:block h-6 w-px bg-surface-container-highest"></div>
+<span class="hidden sm:inline-block font-label-lg text-label-lg text-on-surface uppercase tracking-wider text-xs">Cổng Thanh Toán An Toàn</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full border border-surface-container">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-body-sm text-body-sm text-on-surface">Hotline: <strong class="font-bold text-primary">1900 8888</strong></span>
+</div>
+<div class="flex items-center gap-1.5 text-xs text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-tertiary text-base" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="hidden md:inline">Mã hoá SSL 256-bit</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Progress Bar (Checkout Steps) -->
+<section class="bg-surface-container-low border-b border-surface-container py-4">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex items-center justify-between relative">
+<!-- Connecting Line -->
+<div class="absolute top-1/2 left-8 right-8 -translate-y-1/2 h-0.5 bg-surface-container-highest z-0"></div>
+<div class="absolute top-1/2 left-8 w-1/2 -translate-y-1/2 h-0.5 bg-primary z-0"></div>
+<!-- Step 1: Hoàn thành -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs shadow-sm">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<span class="mt-1.5 font-label-sm text-label-sm text-primary font-bold">1. Giỏ hàng</span>
+</div>
+<!-- Step 2: Hiện tại -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-white flex items-center justify-center font-bold text-xs ring-4 ring-primary-fixed">
+            2
+          </div>
+<span class="mt-1.5 font-label-sm text-label-sm text-primary-container font-bold">2. Thanh toán &amp; Giao hàng</span>
+</div>
+<!-- Step 3: Chưa tới -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold text-xs">
+            3
+          </div>
+<span class="mt-1.5 font-label-sm text-label-sm text-outline">3. Hoàn tất đặt hàng</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Checkout Content: 2-Column Layout -->
+<main class="flex-grow max-w-7xl w-full mx-auto px-margin-mobile md:px-margin py-8 md:py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Form Thông tin & Thanh toán (8 Columns) -->
+<div class="lg:col-span-7 xl:col-span-8 space-y-6">
+<!-- Khối 1: Thông tin người nhận -->
+<div class="bg-surface-container-lowest p-6 rounded-xl custom-shadow-card border border-surface-container">
+<div class="flex items-center gap-2.5 pb-4 border-b border-surface-container mb-5">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">person</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">1. Thông tin người nhận</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Họ và tên *</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="Nhập họ và tên" type="text" value="Nguyễn Tuấn Anh"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Số điện thoại *</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="Số điện thoại nhận hàng" type="tel" value="0912 345 678"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Email nhận thông báo đơn hàng *</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="Email nhận mã tracking và hóa đơn VAT" type="email" value="tuananh.lego@gmail.com"/>
+</div>
+</div>
+</div>
+<!-- Khối 2: Địa chỉ giao nhận hàng -->
+<div class="bg-surface-container-lowest p-6 rounded-xl custom-shadow-card border border-surface-container">
+<div class="flex items-center gap-2.5 pb-4 border-b border-surface-container mb-5">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">2. Địa chỉ giao nhận hàng</h2>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Tỉnh / Thành phố *</label>
+<select class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none">
+<option selected="">Hà Nội</option>
+<option>TP. Hồ Chí Minh</option>
+<option>Đà Nẵng</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Quận / Huyện *</label>
+<select class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none">
+<option selected="">Quận Hoàn Kiếm</option>
+<option>Quận Ba Đình</option>
+<option>Quận Đống Đa</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Phường / Xã *</label>
+<select class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none">
+<option selected="">Phường Hàng Trống</option>
+<option>Phường Tràng Tiền</option>
+<option>Phường Lý Thái Tổ</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Địa chỉ chi tiết *</label>
+<input class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="Tên đường, toà nhà, số nhà..." type="text" value="Số 88 Phố Huế, Tầng 3 Tòa nhà Heritage"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 uppercase">Ghi chú đơn hàng (Đóng gói &amp; Giờ giao)</label>
+<textarea class="w-full px-4 py-2.5 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-on-surface font-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="Yêu cầu bảo quản đóng gói collector..." rows="2">Giao giờ hành chính, bọc màng xốp chống sốc bảo vệ nguyên seal hộp LEGO Collector.</textarea>
+</div>
+</div>
+</div>
+<!-- Khối 3: Phương thức giao hàng -->
+<div class="bg-surface-container-lowest p-6 rounded-xl custom-shadow-card border border-surface-container">
+<div class="flex items-center gap-2.5 pb-4 border-b border-surface-container mb-5">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">3. Phương thức vận chuyển</h2>
+</div>
+<div class="space-y-3">
+<label class="flex items-start p-4 rounded-lg border-2 border-primary bg-primary-fixed/20 cursor-pointer transition-all duration-150">
+<input checked="" class="mt-1 text-primary focus:ring-primary h-4 w-4" name="shipping_method" type="radio"/>
+<div class="ml-3 flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Giao Hỏa Tốc 2H (Nội thành)</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider font-label-sm">VIP SPEED</span>
+</div>
+<span class="font-bold text-primary font-headline-sm text-body-md">Miễn phí</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Đội xe chuyên dụng RAMBO chuyển hàng hộp niêm phong nguyên vẹn trong 120 phút.</p>
+</div>
+</label>
+<label class="flex items-start p-4 rounded-lg border border-surface-container hover:border-outline-variant bg-surface cursor-pointer transition-all duration-150">
+<input class="mt-1 text-primary focus:ring-primary h-4 w-4" name="shipping_method" type="radio"/>
+<div class="ml-3 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Giao Tiêu Chuẩn Toàn Quốc (1-2 ngày)</span>
+<span class="font-bold text-on-surface font-headline-sm text-body-md">Miễn phí</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Giao hàng đảm bảo có bảo hiểm thất lạc và móp méo hộp 100%.</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Khối 4: Phương thức thanh toán linh hoạt -->
+<div class="bg-surface-container-lowest p-6 rounded-xl custom-shadow-card border border-surface-container">
+<div class="flex items-center gap-2.5 pb-4 border-b border-surface-container mb-5">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">4. Phương thức thanh toán</h2>
+</div>
+<div class="space-y-3">
+<!-- VietQR (Checked) -->
+<div class="rounded-lg border-2 border-primary bg-surface-container-lowest overflow-hidden">
+<label class="flex items-center p-4 cursor-pointer">
+<input checked="" class="text-primary focus:ring-primary h-4 w-4" name="payment_method" type="radio"/>
+<div class="ml-3 flex-1 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Chuyển khoản ngân hàng qua mã QR (VietQR / Napas 247)</span>
+<span class="bg-primary-container text-white px-2 py-0.5 rounded text-[11px] font-bold tracking-wider">TỨC THÌ</span>
+</div>
+<span class="material-symbols-outlined text-primary">qr_code_scanner</span>
+</div>
+</label>
+<!-- Nội dung mở rộng cho VietQR -->
+<div class="bg-surface-container-low p-4 border-t border-surface-container flex items-center gap-4">
+<div class="w-16 h-16 bg-white border border-surface-container-highest rounded-lg flex items-center justify-center p-1">
+<span class="material-symbols-outlined text-3xl text-on-surface">qr_code_2</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                  Mã QR thanh toán tự động kèm cú pháp đơn hàng sẽ hiển thị ngay sau khi xác nhận. Giao dịch được xác minh tự động trong 5 giây.
+                </p>
+</div>
+</div>
+<!-- COD -->
+<label class="flex items-center p-4 rounded-lg border border-surface-container hover:border-outline-variant bg-surface cursor-pointer transition-all">
+<input class="text-primary focus:ring-primary h-4 w-4" name="payment_method" type="radio"/>
+<div class="ml-3 flex-1 flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Thanh toán khi nhận hàng (COD)</span>
+<span class="material-symbols-outlined text-outline">local_atm</span>
+</div>
+</label>
+<!-- MoMo / VNPAY -->
+<label class="flex items-center p-4 rounded-lg border border-surface-container hover:border-outline-variant bg-surface cursor-pointer transition-all">
+<input class="text-primary focus:ring-primary h-4 w-4" name="payment_method" type="radio"/>
+<div class="ml-3 flex-1 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Ví điện tử MoMo / VNPAY-QR</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-[11px] font-bold">GIẢM 50.000đ</span>
+</div>
+<span class="material-symbols-outlined text-outline">account_balance_wallet</span>
+</div>
+</label>
+<!-- Credit Card -->
+<label class="flex items-center p-4 rounded-lg border border-surface-container hover:border-outline-variant bg-surface cursor-pointer transition-all">
+<input class="text-primary focus:ring-primary h-4 w-4" name="payment_method" type="radio"/>
+<div class="ml-3 flex-1 flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Thẻ tín dụng / Ghi nợ quốc tế (Visa, Mastercard, JCB)</span>
+<span class="material-symbols-outlined text-outline">credit_card</span>
+</div>
+</label>
+<!-- Trả góp 0% -->
+<label class="flex items-center p-4 rounded-lg border border-surface-container hover:border-outline-variant bg-surface cursor-pointer transition-all">
+<input class="text-primary focus:ring-primary h-4 w-4" name="payment_method" type="radio"/>
+<div class="ml-3 flex-1 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-body-md font-bold text-on-surface">Trả góp 0% lãi suất qua thẻ tín dụng</span>
+<span class="text-xs text-on-surface-variant font-medium">(Kỳ hạn 3-6-12 tháng)</span>
+</div>
+<span class="material-symbols-outlined text-outline">percent</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Order Review Card (Sticky) (4-5 Columns) -->
+<div class="lg:col-span-5 xl:col-span-4 sticky top-20 space-y-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl custom-shadow-card border border-surface-container">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tóm tắt đơn hàng</h3>
+<span class="bg-surface-container px-2 py-0.5 rounded text-xs font-bold text-on-surface-variant font-label-md">3 MÓN</span>
+</div>
+<!-- Product Item List -->
+<div class="divide-y divide-surface-container-low py-2">
+<!-- Sản phẩm 1: Ferrari Daytona -->
+<div class="py-3 flex items-center gap-3">
+<div class="relative w-16 h-16 bg-surface-container-low rounded-lg p-1 border border-surface-container flex-shrink-0 flex items-center justify-center">
+<img alt="LEGO Technic 42143 Ferrari Daytona SP3" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf_W6-ecvj0h3UpS1ebr_6DK175Q7xPPR-X4aMmJmQQA_zS3rydLHX8MCJiGBN58s5xo94dQKQVaYl5Ja76rkcnujbHgiWNg73t5argWl6-jm4mgPR0xNdShNraWSWZwOLoRr40CgVfUUxAng2hrVbpWlrXbti6yKcSn3nOF889wK9U_EkozWBV0RC6e9pefaYbW0HOD3DN_xG9VjcToNtEYFooUaN8wOmiElu2c0A"/>
+<span class="absolute -top-1.5 -right-1.5 bg-on-surface text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold text-on-surface truncate">LEGO Technic 42143 Ferrari Daytona SP3</h4>
+<p class="text-xs text-on-surface-variant">Mã SP: 42143 • 3.778 chi tiết</p>
+<div class="text-sm font-bold text-primary font-headline-sm mt-0.5">9.990.000đ</div>
+</div>
+</div>
+<!-- Sản phẩm 2: Millennium Falcon UCS -->
+<div class="py-3 flex items-center gap-3">
+<div class="relative w-16 h-16 bg-surface-container-low rounded-lg p-1 border border-surface-container flex-shrink-0 flex items-center justify-center">
+<img alt="LEGO Star Wars 75192 Millennium Falcon UCS" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASVxZ8NCKa1qYDM95rsKhGSnPeXYYYekv0okjJ_LoQbYWiaU99ldjSp_96dKlrme159CrPoNLAR0bKiBOc-iNc1NDhAkwqHhsgpcr26qp4aeQUezZs-HbHqFhjc1g3UyfgIsn7RfijU3o1PJbmiS0hmDssIx52saUdanfV1MFeHhnB8jJL6TdF7lMIsBmVXEBjPNZrOK8mtK_AvnsTv38049c3wCTDrq98YOg7unb1"/>
+<span class="absolute -top-1.5 -right-1.5 bg-on-surface text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold text-on-surface truncate">LEGO Star Wars 75192 Millennium Falcon UCS</h4>
+<p class="text-xs text-on-surface-variant">Mã SP: 75192 • 7.541 chi tiết</p>
+<div class="text-sm font-bold text-primary font-headline-sm mt-0.5">18.690.000đ</div>
+</div>
+</div>
+<!-- Quà tặng Mini Creator -->
+<div class="py-3 flex items-center gap-3">
+<div class="relative w-16 h-16 bg-surface-container-low rounded-lg p-1 border border-secondary-container flex-shrink-0 flex items-center justify-center">
+<img class="max-h-full max-w-full object-contain" data-alt="A small collector miniature official LEGO duck toy build on a pristine white minimalist gallery background with bright warm studio lighting. The bright yellow brick body and iconic orange beak are sharply in focus, evoking playful Lego aesthetics and collector exclusivity. Clean sharp product photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-w1FDXwIe2EojPQCOHVrwuTFRDFGTsgljiPYnIA703lcrS7C-xLqEqvwgXDobwpwEDWnCdlF6zSCp_3KzKvwkX-dtHCmKCLPYSLm9-FhC74KGebXnxdUDdeokB5byg7PHUzewxbJLA1vBOmtGDp9CIboxjmsUkM3c-Bkx6rcM-adHDeIK_9EBCp1YRzCrOESFQIisja9qxlRyqaUbbm91T3ce2ihPVCwM34GpHzMz"/>
+<span class="absolute -top-1.5 -right-1.5 bg-secondary text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<h4 class="text-sm font-bold text-on-surface truncate">Bộ Quà Tặng Mini Creator Vịt Vàng</h4>
+<span class="bg-secondary-container text-on-secondary-container text-[9px] font-extrabold px-1 rounded">QUÀ VIP</span>
+</div>
+<p class="text-xs text-on-surface-variant">Quà tặng tri ân RAMBO VIP Club</p>
+<div class="text-sm font-bold text-secondary font-headline-sm mt-0.5">0đ</div>
+</div>
+</div>
+</div>
+<!-- Coupon Block -->
+<div class="pt-3 pb-4 border-t border-surface-container">
+<div class="flex items-center justify-between bg-primary-fixed/30 border border-primary-fixed p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+<span class="font-label-md text-label-md text-primary font-bold">RAMBOVIP</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold text-primary">-500.000đ</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors text-xs flex items-center">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Price Calculation Breakdown -->
+<div class="space-y-2.5 pt-3 border-t border-surface-container font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Tiền hàng</span>
+<span class="font-medium text-on-surface font-label-md">28.680.000đ</span>
+</div>
+<div class="flex justify-between text-primary">
+<span>Giảm giá voucher</span>
+<span class="font-bold font-label-md">-500.000đ</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Phí vận chuyển</span>
+<span class="font-bold text-tertiary">0đ (Miễn phí)</span>
+</div>
+<div class="pt-3 border-t border-surface-container flex justify-between items-baseline">
+<span class="font-bold text-on-surface font-headline-sm">Tổng số tiền thanh toán</span>
+<div class="text-right">
+<span class="font-display-lg-mobile text-headline-xl text-primary font-extrabold block">28.180.000đ</span>
+<span class="text-[11px] text-on-surface-variant block mt-0.5">(Đã bao gồm thuế VAT)</span>
+</div>
+</div>
+</div>
+<!-- Checkbox Terms -->
+<div class="mt-5 pt-4 border-t border-surface-container">
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-1 rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-xs text-on-surface-variant leading-relaxed">
+                Tôi đã đọc và đồng ý với <a class="text-primary underline font-medium" href="#">điều khoản sử dụng</a> &amp; <a class="text-primary underline font-medium" href="#">chính sách mua hàng</a> của RAMBO STORE.
+              </span>
+</label>
+</div>
+<!-- Checkout Confirm Button -->
+<button class="mt-5 w-full bg-primary-container text-white py-3.5 px-6 rounded-lg font-headline-sm font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary hover:-translate-y-0.5 transition-all duration-200 active:scale-[0.98]">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="uppercase tracking-wider">XÁC NHẬN ĐẶT HÀNG NGAY</span>
+</button>
+<!-- Authentic Guarantee Badge -->
+<div class="mt-4 p-3 bg-surface-container-low rounded-lg flex items-center justify-center gap-2 text-center text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Cam kết 100% LEGO chính hãng • Đổi trả 30 ngày</span>
+</div>
+</div>
+<!-- Help Info Box -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-surface-container text-xs text-on-surface-variant space-y-1.5">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">support_agent</span>
+<span>Cần hỗ trợ đặt đơn tức thì?</span>
+</div>
+<p>Nhân viên tư vấn RAMBO STORE sẵn sàng hỗ trợ bạn qua kênh hotline <strong>1900 8888</strong> từ 8:00 - 22:00 mỗi ngày.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer đồng bộ Shared Components JSON -->
+<footer class="bg-surface-container mt-auto border-t border-surface-container-highest">
+<div class="w-full mx-auto px-margin-mobile md:px-margin py-space-xl max-w-7xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 pb-6 border-b border-surface-container-highest">
+<div class="flex items-center gap-3">
+<span class="font-headline-lg text-headline-lg font-black text-primary">RAMBO STORE</span>
+<span class="text-xs bg-surface-container-highest px-2 py-1 rounded text-on-surface-variant font-label-sm">OFFICIAL DISTRIBUTOR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">
+          © 2024 RAMBO STORE Vietnam. Đối tác phân phối chính hãng LEGO. Giấy phép ĐKKD số 0108888888.
+        </p>
+</div>
+<!-- Links Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3 text-center md:text-left">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">100% Chính Hãng</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Giao hàng hỏa tốc</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Đổi trả 30 ngày</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Bảo mật thông tin</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Điều khoản dịch vụ</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Hướng dẫn mua hàng</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Hệ thống showroom</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Tra cứu đơn hàng</a>
+</div>
+</div>
+</footer>
+</body></html>

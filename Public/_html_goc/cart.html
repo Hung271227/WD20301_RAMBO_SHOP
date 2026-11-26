@@ -1,0 +1,1269 @@
+<!doctype html>
+
+<html class="light" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Giỏ hàng - RAMBO STORE</title>
+    <!-- Material Symbols Outlined -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#93000a",
+              "on-primary": "#ffffff",
+              "tertiary-fixed-dim": "#afc6ff",
+              "secondary-fixed": "#ffe174",
+              "on-secondary-container": "#6f5c00",
+              "tertiary-fixed": "#d9e2ff",
+              "on-surface-variant": "#5d3f3b",
+              "on-tertiary-container": "#ffffff",
+              "on-primary-fixed": "#410001",
+              "surface-tint": "#c0000c",
+              "inverse-on-surface": "#f3f0ef",
+              "secondary-fixed-dim": "#eac300",
+              surface: "#fcf9f8",
+              "error-container": "#ffdad6",
+              "on-background": "#1b1b1c",
+              "outline-variant": "#e7bdb7",
+              tertiary: "#0b58c2",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#ffb4aa",
+              "primary-fixed": "#ffdad5",
+              "surface-container-low": "#f6f3f2",
+              "surface-container": "#f0eded",
+              "on-primary-container": "#ffffff",
+              "surface-container-highest": "#e5e2e1",
+              primary: "#be000c",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#004298",
+              "on-surface": "#1b1b1c",
+              error: "#ba1a1a",
+              "secondary-container": "#fed400",
+              "tertiary-container": "#3772dd",
+              "inverse-surface": "#303030",
+              "on-secondary-fixed-variant": "#554500",
+              secondary: "#705d00",
+              "on-error": "#ffffff",
+              background: "#fcf9f8",
+              "surface-container-high": "#eae7e7",
+              "on-primary-fixed-variant": "#930007",
+              "surface-variant": "#e5e2e1",
+              "surface-bright": "#fcf9f8",
+              "on-tertiary-fixed": "#001943",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#221b00",
+              "primary-container": "#e52521",
+              outline: "#926f6a",
+              "inverse-primary": "#ffb4aa",
+              "surface-dim": "#dcd9d9",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-sm": "0.5rem",
+              "space-xs": "0.25rem",
+              gutter: "1.5rem",
+              "margin-mobile": "1rem",
+              "space-xl": "2.5rem",
+              "space-lg": "1.5rem",
+              margin: "2rem",
+              "space-md": "1rem",
+              "gutter-mobile": "1rem",
+            },
+            fontFamily: {
+              "headline-xl-mobile": ["Plus Jakarta Sans"],
+              "label-lg": ["Space Grotesk"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "display-lg": ["Plus Jakarta Sans"],
+              "label-sm": ["Space Grotesk"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "label-md": ["Space Grotesk"],
+              "body-md": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "headline-xl": ["Plus Jakarta Sans"],
+              "display-lg-mobile": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "headline-xl-mobile": [
+                "1.75rem",
+                {
+                  lineHeight: "1.25",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "800",
+                },
+              ],
+              "label-lg": [
+                "0.875rem",
+                { lineHeight: "1", letterSpacing: "0.04em", fontWeight: "700" },
+              ],
+              "headline-sm": [
+                "1.125rem",
+                { lineHeight: "1.4", letterSpacing: "0", fontWeight: "700" },
+              ],
+              "headline-lg": [
+                "1.5rem",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-lg": [
+                "3.5rem",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "800",
+                },
+              ],
+              "label-sm": [
+                "0.6875rem",
+                { lineHeight: "1", letterSpacing: "0.08em", fontWeight: "700" },
+              ],
+              "body-sm": [
+                "0.875rem",
+                { lineHeight: "1.45", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "label-md": [
+                "0.75rem",
+                { lineHeight: "1", letterSpacing: "0.06em", fontWeight: "700" },
+              ],
+              "body-md": [
+                "1rem",
+                { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "body-lg": [
+                "1.125rem",
+                {
+                  lineHeight: "1.6",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-xl": [
+                "2.25rem",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "display-lg-mobile": [
+                "2.25rem",
+                {
+                  lineHeight: "1.15",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+      }
+      .material-symbols-outlined[data-weight="fill"] {
+        font-variation-settings: "FILL" 1;
+      }
+      .custom-shadow-resting {
+        box-shadow:
+          0 4px 16px -2px rgba(30, 30, 30, 0.04),
+          0 1px 3px 0 rgba(30, 30, 30, 0.02);
+      }
+      .custom-shadow-lifted:hover {
+        box-shadow:
+          0 12px 28px -4px rgba(229, 37, 33, 0.08),
+          0 4px 12px -2px rgba(30, 30, 30, 0.05);
+      }
+      .brick-btn-highlight {
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md"
+  >
+    <!-- TopNavBar (Shared Component) -->
+    <header
+      class="bg-surface-container-lowest dark:bg-surface sticky top-0 z-50 shadow-sm dark:shadow-none"
+    >
+      <div
+        class="w-full mx-auto px-margin max-w-7xl flex flex-col justify-between"
+      >
+        <!-- Upper Strip: Brand, Search, User actions -->
+        <div class="flex items-center justify-between py-space-md gap-gutter">
+          <!-- Brand Logo -->
+          <a class="flex items-center gap-space-sm shrink-0" href="#">
+            <img
+              alt="Logo RAMBO STORE"
+              class="h-10 md:h-12 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida/ALJJyrBv1johu_oiQLe1bsJ7yq0QpLBJTknY-qQQsGAWIfcXvyA3jYsXwGGyHS0kWKufKUs9a38fpLmA_cor0KxLGsDx6I46SZLxXAwVitHfWxe3aiCH6wx7HldvXOFCZBs-INFSflHHs-k8blf87QxMq0s_8YPag39vbBNVmCXsyH4g7aKPd1RrSX0GjJXsiVKdb9rPKm36rj8TgIHmzfG9wwwO-mYXUFHOspdR3qGA1EOtuA"
+            />
+          </a>
+          <!-- Search Bar (on_left configuration) -->
+          <div class="hidden md:flex flex-1 max-w-lg relative items-center">
+            <span
+              class="material-symbols-outlined absolute left-3.5 text-on-surface-variant pointer-events-none text-xl"
+              >search</span
+            >
+            <input
+              class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant/40 rounded-lg text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+              placeholder="Tìm kiếm bộ LEGO, chủ đề, mã set..."
+              type="text"
+            />
+          </div>
+          <!-- Trailing actions -->
+          <div class="flex items-center gap-space-md shrink-0">
+            <a
+              class="flex items-center gap-1.5 p-2 rounded-lg text-on-surface hover:text-primary hover:bg-surface-container-low transition-colors"
+              href="#"
+              title="Sản phẩm yêu thích"
+            >
+              <span class="material-symbols-outlined">favorite</span>
+              <span class="hidden lg:inline text-label-md font-label-md"
+                >Yêu thích</span
+              >
+            </a>
+            <a
+              class="relative flex items-center gap-2 px-3 py-2 bg-surface-container-low rounded-lg text-primary font-bold transition-all duration-200 active:scale-95 shadow-sm"
+              href="#"
+              title="Giỏ hàng"
+            >
+              <span class="material-symbols-outlined" data-weight="fill"
+                >shopping_cart</span
+              >
+              <span class="text-label-md font-label-md">Giỏ hàng</span>
+              <span
+                class="inline-flex items-center justify-center w-5 h-5 text-label-sm font-label-sm bg-primary-container text-on-primary-container rounded-full"
+                >2</span
+              >
+            </a>
+            <a
+              class="flex items-center gap-1.5 p-2 rounded-lg text-on-surface hover:text-primary hover:bg-surface-container-low transition-colors"
+              href="#"
+              title="Tài khoản"
+            >
+              <span class="material-symbols-outlined">person</span>
+              <span class="hidden lg:inline text-label-md font-label-md"
+                >Tài khoản</span
+              >
+            </a>
+          </div>
+        </div>
+        <!-- Lower Strip: Navigation Links -->
+        <nav
+          class="hidden md:flex items-center gap-gutter py-2 overflow-x-auto text-body-sm"
+        >
+          <a
+            class="text-on-surface font-medium hover:text-primary pb-1 transition-colors"
+            href="#"
+            >Trang chủ</a
+          >
+          <a
+            class="text-on-surface font-medium hover:text-primary pb-1 transition-colors"
+            href="#"
+            >Tất cả sản phẩm</a
+          >
+          <a
+            class="text-on-surface font-medium hover:text-primary pb-1 transition-colors"
+            href="#"
+            >LEGO Themes</a
+          >
+          <a
+            class="text-on-surface font-medium hover:text-primary pb-1 transition-colors flex items-center gap-1"
+            href="#"
+          >
+            Khuyến mãi Hot
+            <span
+              class="bg-primary-container text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full"
+              >HOT</span
+            >
+          </a>
+          <a
+            class="text-on-surface font-medium hover:text-primary pb-1 transition-colors"
+            href="#"
+            >Bộ mới về</a
+          >
+          <a
+            class="text-on-surface font-medium hover:text-primary pb-1 transition-colors"
+            href="#"
+            >Giới thiệu &amp; Cửa hàng</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- Main Content Canvas -->
+    <main
+      class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-lg md:py-space-xl"
+    >
+      <!-- Checkout Steps Breadcrumb Tracker -->
+      <div class="mb-space-lg md:mb-space-xl">
+        <div
+          class="flex items-center justify-between max-w-3xl mx-auto relative px-4"
+        >
+          <!-- Connecting Track Line -->
+          <div
+            class="absolute left-8 right-8 top-1/2 -translate-y-1/2 h-1 bg-surface-container-highest -z-0"
+          >
+            <div class="h-full bg-primary w-1/4 rounded-full"></div>
+          </div>
+          <!-- Step 1: Active -->
+          <div class="flex flex-col items-center relative z-10">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-headline-sm shadow-md ring-4 ring-surface"
+            >
+              1
+            </div>
+            <span
+              class="mt-2 text-label-md font-label-md text-primary font-bold"
+              >1. Giỏ hàng</span
+            >
+            <span class="text-[11px] text-primary font-medium"
+              >(Đang ở đây)</span
+            >
+          </div>
+          <!-- Step 2: Inactive -->
+          <div class="flex flex-col items-center relative z-10">
+            <div
+              class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold text-headline-sm ring-4 ring-surface"
+            >
+              2
+            </div>
+            <span
+              class="mt-2 text-label-md font-label-md text-on-surface-variant font-medium"
+              >2. Thanh toán</span
+            >
+          </div>
+          <!-- Step 3: Inactive -->
+          <div class="flex flex-col items-center relative z-10">
+            <div
+              class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold text-headline-sm ring-4 ring-surface"
+            >
+              3
+            </div>
+            <span
+              class="mt-2 text-label-md font-label-md text-on-surface-variant font-medium"
+              >3. Hoàn tất đặt hàng</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Title Strip & Urgency Banner -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md border-b border-surface-container-highest gap-4 mb-space-lg"
+      >
+        <div class="flex items-center gap-3">
+          <h1
+            class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight"
+          >
+            Giỏ hàng của bạn
+          </h1>
+          <span
+            class="bg-surface-container-high px-3 py-1 rounded-full text-label-md font-label-md text-on-surface-variant font-bold"
+          >
+            2 sản phẩm
+          </span>
+        </div>
+        <div
+          class="flex items-center gap-2 text-label-sm font-label-sm text-secondary font-bold bg-secondary-fixed/50 px-3 py-1.5 rounded-lg border border-secondary-fixed"
+        >
+          <span class="material-symbols-outlined text-base">verified</span>
+          BẢO ĐẢM 100% LEGO CHÍNH HÃNG - ĐÓNG GÓI HỘP NGUYÊN SEAL
+        </div>
+      </div>
+      <!-- Two-Column Cart Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+        <!-- LEFT COLUMN: Product Items (8 Columns) -->
+        <div class="lg:col-span-8 flex flex-col gap-space-md">
+          <!-- Top Table Control Bar -->
+          <div
+            class="bg-surface-container-lowest p-space-md rounded-xl custom-shadow-resting border border-black/5 flex items-center justify-between"
+          >
+            <label class="flex items-center gap-3 cursor-pointer select-none">
+              <input
+                checked=""
+                class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary focus:ring-offset-0"
+                type="checkbox"
+              />
+              <span class="font-label-md text-label-md text-on-surface"
+                >Chọn tất cả (2 sản phẩm)</span
+              >
+            </label>
+            <button
+              class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary flex items-center gap-1 transition-colors"
+            >
+              <span class="material-symbols-outlined text-base"
+                >delete_sweep</span
+              >
+              <span>Xóa mục đã chọn</span>
+            </button>
+          </div>
+          <!-- Product Item 1: Ferrari Daytona SP3 -->
+          <div
+            class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl custom-shadow-resting border border-black/5 custom-shadow-lifted transition-all duration-200"
+          >
+            <div class="flex flex-col sm:flex-row gap-space-md">
+              <!-- Checkbox & Thumbnail -->
+              <div class="flex items-start gap-3">
+                <input
+                  checked=""
+                  class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary focus:ring-offset-0 mt-2"
+                  type="checkbox"
+                />
+                <div
+                  class="relative w-28 h-28 sm:w-36 sm:h-36 bg-surface-container-low rounded-lg p-2 shrink-0 flex items-center justify-center border border-black/5"
+                >
+                  <img
+                    alt="LEGO Technic 42143 Ferrari Daytona SP3"
+                    class="w-full h-full object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf_W6-ecvj0h3UpS1ebr_6DK175Q7xPPR-X4aMmJmQQA_zS3rydLHX8MCJiGBN58s5xo94dQKQVaYl5Ja76rkcnujbHgiWNg73t5argWl6-jm4mgPR0xNdShNraWSWZwOLoRr40CgVfUUxAng2hrVbpWlrXbti6yKcSn3nOF889wK9U_EkozWBV0RC6e9pefaYbW0HOD3DN_xG9VjcToNtEYFooUaN8wOmiElu2c0A"
+                  />
+                  <span
+                    class="absolute top-1 left-1 bg-primary text-on-primary font-label-sm text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider"
+                    >-20%</span
+                  >
+                </div>
+              </div>
+              <!-- Product Details -->
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-start justify-between gap-2">
+                    <div>
+                      <span
+                        class="text-label-sm font-label-sm text-on-surface-variant font-bold"
+                        >MÃ: 42143 • LEGO TECHNIC ULTIMATE</span
+                      >
+                      <h2
+                        class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer"
+                      >
+                        LEGO Technic 42143 Ferrari Daytona SP3
+                      </h2>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <button
+                        class="p-1.5 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors"
+                        title="Thêm vào danh sách yêu thích"
+                      >
+                        <span class="material-symbols-outlined text-xl"
+                          >favorite</span
+                        >
+                      </button>
+                      <button
+                        class="p-1.5 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors"
+                        title="Xóa khỏi giỏ hàng"
+                      >
+                        <span class="material-symbols-outlined text-xl"
+                          >delete</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span
+                      class="text-xs bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-medium"
+                      >3,778 mảnh ghép</span
+                    >
+                    <span
+                      class="text-xs bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-medium"
+                      >Độ tuổi 18+</span
+                    >
+                    <span
+                      class="text-xs text-primary font-bold bg-primary-fixed/40 px-2 py-0.5 rounded"
+                      >Còn 3 bộ trong kho</span
+                    >
+                  </div>
+                </div>
+                <!-- Price & Quantity Row -->
+                <div
+                  class="flex flex-wrap items-end justify-between gap-4 mt-4 pt-3 border-t border-surface-container-highest/60"
+                >
+                  <div class="flex items-baseline gap-2">
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-extrabold"
+                      >9.990.000đ</span
+                    >
+                    <span class="text-body-sm text-outline line-through"
+                      >12.490.000đ</span
+                    >
+                  </div>
+                  <!-- Quantity Stepper -->
+                  <div
+                    class="flex items-center border border-outline-variant/60 rounded-lg bg-surface-container-lowest overflow-hidden"
+                  >
+                    <button
+                      class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-container-high active:bg-surface-container transition-colors font-bold text-lg disabled:opacity-30"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="w-10 h-8 text-center text-label-md font-label-md font-bold border-0 p-0 focus:ring-0 text-on-surface bg-transparent"
+                      readonly=""
+                      type="text"
+                      value="1"
+                    />
+                    <button
+                      class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-container-high active:bg-surface-container transition-colors font-bold text-lg"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div class="text-right">
+                    <span
+                      class="text-label-sm font-label-sm text-on-surface-variant block"
+                      >Thành tiền:</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                      >9.990.000đ</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product Item 2: Millennium Falcon UCS -->
+          <div
+            class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl custom-shadow-resting border border-black/5 custom-shadow-lifted transition-all duration-200"
+          >
+            <div class="flex flex-col sm:flex-row gap-space-md">
+              <!-- Checkbox & Thumbnail -->
+              <div class="flex items-start gap-3">
+                <input
+                  checked=""
+                  class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary focus:ring-offset-0 mt-2"
+                  type="checkbox"
+                />
+                <div
+                  class="relative w-28 h-28 sm:w-36 sm:h-36 bg-surface-container-low rounded-lg p-2 shrink-0 flex items-center justify-center border border-black/5"
+                >
+                  <img
+                    alt="LEGO Star Wars 75192 Millennium Falcon UCS"
+                    class="w-full h-full object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuASVxZ8NCKa1qYDM95rsKhGSnPeXYYYekv0okjJ_LoQbYWiaU99ldjSp_96dKlrme159CrPoNLAR0bKiBOc-iNc1NDhAkwqHhsgpcr26qp4aeQUezZs-HbHqFhjc1g3UyfgIsn7RfijU3o1PJbmiS0hmDssIx52saUdanfV1MFeHhnB8jJL6TdF7lMIsBmVXEBjPNZrOK8mtK_AvnsTv38049c3wCTDrq98YOg7unb1"
+                  />
+                  <span
+                    class="absolute top-1 left-1 bg-inverse-surface text-secondary-fixed font-label-sm text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider"
+                    >UCS FLAGSHIP</span
+                  >
+                </div>
+              </div>
+              <!-- Product Details -->
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-start justify-between gap-2">
+                    <div>
+                      <span
+                        class="text-label-sm font-label-sm text-on-surface-variant font-bold"
+                        >MÃ: 75192 • ULTIMATE COLLECTOR SERIES</span
+                      >
+                      <h2
+                        class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer"
+                      >
+                        LEGO Star Wars 75192 Millennium Falcon UCS
+                      </h2>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <button
+                        class="p-1.5 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors"
+                        title="Thêm vào danh sách yêu thích"
+                      >
+                        <span class="material-symbols-outlined text-xl"
+                          >favorite</span
+                        >
+                      </button>
+                      <button
+                        class="p-1.5 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors"
+                        title="Xóa khỏi giỏ hàng"
+                      >
+                        <span class="material-symbols-outlined text-xl"
+                          >delete</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span
+                      class="text-xs bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-medium"
+                      >7,541 mảnh ghép</span
+                    >
+                    <span
+                      class="text-xs bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-medium"
+                      >Phiên bản sưu tầm</span
+                    >
+                    <span
+                      class="text-xs text-secondary font-bold bg-secondary-fixed/50 px-2 py-0.5 rounded"
+                      >Tặng kèm kệ chân đế</span
+                    >
+                  </div>
+                </div>
+                <!-- Price & Quantity Row -->
+                <div
+                  class="flex flex-wrap items-end justify-between gap-4 mt-4 pt-3 border-t border-surface-container-highest/60"
+                >
+                  <div class="flex items-baseline gap-2">
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-extrabold"
+                      >18.690.000đ</span
+                    >
+                  </div>
+                  <!-- Quantity Stepper -->
+                  <div
+                    class="flex items-center border border-outline-variant/60 rounded-lg bg-surface-container-lowest overflow-hidden"
+                  >
+                    <button
+                      class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-container-high active:bg-surface-container transition-colors font-bold text-lg disabled:opacity-30"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="w-10 h-8 text-center text-label-md font-label-md font-bold border-0 p-0 focus:ring-0 text-on-surface bg-transparent"
+                      readonly=""
+                      type="text"
+                      value="1"
+                    />
+                    <button
+                      class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-container-high active:bg-surface-container transition-colors font-bold text-lg"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div class="text-right">
+                    <span
+                      class="text-label-sm font-label-sm text-on-surface-variant block"
+                      >Thành tiền:</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                      >18.690.000đ</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Promotional Gift Row -->
+          <div
+            class="bg-secondary-fixed/20 border border-secondary-fixed/60 rounded-xl p-space-md flex items-center justify-between gap-4"
+          >
+            <div class="flex items-center gap-3">
+              <div
+                class="w-14 h-14 bg-surface-container-lowest rounded-lg p-1.5 flex items-center justify-center border border-secondary-fixed/50 shrink-0 shadow-sm"
+              >
+                <img
+                  class="w-full h-full object-contain"
+                  data-alt="A charming official LEGO Creator mini promotional set of a bright yellow duck built with classic plastic toy bricks, displayed on a clean white glossy reflective studio table against a soft neutral gradient background with crisp studio lighting."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-aiUGBmgLFTAZ8oC_SeR-__iHoURJua2r6lkayNPH6eENy1pdI7tpvW-3wu1ecwqlKGqYqQujVIR3LlY-_LQP3efNs0GYPuavodqUuYD1zr4iDI3RwMHNHbEyi3Wo-PetF8gC6RS40rC9BOY663iY6NfInNw8H669SkiPyflNHouY8bmh4G10nqbEyuNq-LBk8v4A7fYep4_4OhZJOsuRhs5YNXSJ8Wltc4fRzdiP"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-0.5 rounded font-label-sm uppercase"
+                    >Quà tặng đặc biệt</span
+                  >
+                  <span
+                    class="text-label-sm font-label-sm text-on-surface-variant"
+                    >Đơn hàng &gt; 5.000.000đ</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-sm text-body-md text-on-surface font-bold"
+                >
+                  Bộ Mini LEGO Creator Vịt Vàng (Độc quyền VIP)
+                </h3>
+                <p class="text-body-sm text-on-surface-variant">
+                  Trị giá:
+                  <span class="line-through text-outline">250.000đ</span>
+                </p>
+              </div>
+            </div>
+            <div class="text-right shrink-0">
+              <span
+                class="text-headline-sm font-headline-sm font-extrabold text-primary"
+                >0đ</span
+              >
+              <span class="block text-[11px] text-secondary font-bold"
+                >Đã tự động thêm</span
+              >
+            </div>
+          </div>
+          <!-- Secondary Action Buttons -->
+          <div class="flex items-center justify-between pt-2">
+            <a
+              class="inline-flex items-center gap-2 text-label-md font-label-md text-on-surface hover:text-primary transition-colors py-2 px-3 rounded-lg border border-outline-variant/50 hover:bg-surface-container-low"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-base"
+                >arrow_back</span
+              >
+              <span>Tiếp tục mua sắm</span>
+            </a>
+            <button
+              class="inline-flex items-center gap-1.5 text-label-md font-label-md text-outline hover:text-error transition-colors py-2 px-3 rounded-lg hover:bg-error-container/30"
+            >
+              <span class="material-symbols-outlined text-base"
+                >delete_outline</span
+              >
+              <span>Xóa toàn bộ giỏ hàng</span>
+            </button>
+          </div>
+        </div>
+        <!-- RIGHT COLUMN: Order Summary Box (4 Columns) -->
+        <div class="lg:col-span-4 flex flex-col gap-space-md">
+          <div
+            class="bg-surface-container-lowest p-space-lg rounded-xl custom-shadow-resting border border-black/5 sticky top-24"
+          >
+            <h2
+              class="font-headline-sm text-headline-sm text-on-surface font-extrabold pb-space-sm border-b border-surface-container-highest"
+            >
+              Tóm tắt đơn hàng
+            </h2>
+            <!-- Promo Voucher Section -->
+            <div class="mt-space-md">
+              <label
+                class="block text-label-sm font-label-sm text-on-surface-variant uppercase font-bold mb-1.5"
+              >
+                Mã giảm giá / Voucher khuyến mãi
+              </label>
+              <div class="flex gap-2">
+                <div class="relative flex-1">
+                  <input
+                    class="w-full bg-surface-container-low border-1.5 border-outline-variant/60 rounded-lg text-body-sm font-label-md uppercase font-bold py-2.5 px-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                    type="text"
+                    value="RAMBOVIP"
+                  />
+                  <span
+                    class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-primary text-lg"
+                    data-weight="fill"
+                    >check_circle</span
+                  >
+                </div>
+                <button
+                  class="bg-inverse-surface hover:bg-on-surface text-surface-bright font-label-md text-label-md font-bold px-4 py-2.5 rounded-lg transition-colors"
+                >
+                  Áp dụng
+                </button>
+              </div>
+              <div
+                class="flex items-center justify-between text-xs mt-2 text-primary font-medium bg-primary-fixed/30 p-2 rounded"
+              >
+                <span>Đã áp dụng mã: RAMBOVIP</span>
+                <span class="font-bold">-500.000đ</span>
+              </div>
+            </div>
+            <!-- Price Calculation Rows -->
+            <div
+              class="mt-space-md space-y-3 pt-space-md border-t border-surface-container-highest text-body-sm"
+            >
+              <div
+                class="flex items-center justify-between text-on-surface-variant"
+              >
+                <span>Tạm tính (2 sản phẩm):</span>
+                <span class="font-bold text-on-surface">28.680.000đ</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-primary font-medium"
+              >
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-base">sell</span>
+                  Giảm giá khuyến mãi:
+                </span>
+                <span class="font-bold">-500.000đ</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-on-surface-variant"
+              >
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-base"
+                    >local_shipping</span
+                  >
+                  Phí vận chuyển:
+                </span>
+                <span class="font-bold text-secondary flex items-center gap-1">
+                  Miễn phí
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-weight="fill"
+                    >verified</span
+                  >
+                </span>
+              </div>
+              <p class="text-[11px] text-secondary font-medium pl-5 -mt-1">
+                Đơn hàng đủ điều kiện Freeship hỏa tốc toàn quốc
+              </p>
+              <!-- VIP Reward Points -->
+              <div
+                class="bg-secondary-fixed/30 p-2.5 rounded-lg border border-secondary-fixed/50 flex items-center justify-between"
+              >
+                <div
+                  class="flex items-center gap-1.5 text-xs text-secondary font-bold"
+                >
+                  <span
+                    class="material-symbols-outlined text-base"
+                    data-weight="fill"
+                    >stars</span
+                  >
+                  <span>Điểm thưởng VIP tích lũy:</span>
+                </div>
+                <span
+                  class="text-xs font-label-md text-on-surface font-extrabold"
+                  >+2.818 Điểm</span
+                >
+              </div>
+              <p class="text-[11px] text-on-surface-variant text-right -mt-1">
+                Tương đương 280.000đ cho lần mua sắm kế tiếp
+              </p>
+              <!-- Final Grand Total -->
+              <div
+                class="pt-space-md border-t-2 border-surface-container-highest flex items-baseline justify-between"
+              >
+                <div>
+                  <span
+                    class="font-headline-sm text-headline-sm text-on-surface font-extrabold block"
+                    >Tổng thanh toán:</span
+                  >
+                  <span class="text-[11px] text-on-surface-variant"
+                    >(Đã bao gồm thuế VAT 8%)</span
+                  >
+                </div>
+                <div class="text-right">
+                  <span
+                    class="font-headline-xl text-headline-xl text-primary font-extrabold tracking-tight"
+                    >28.180.000đ</span
+                  >
+                  <span class="text-[11px] text-outline block line-through"
+                    >Tiết kiệm 3.000.000đ</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- PRIMARY ACTION BUTTON (Checkout) -->
+            <div class="mt-space-lg">
+              <button
+                class="w-full bg-primary-container hover:bg-primary text-on-primary-container font-headline-sm text-headline-sm py-4 px-6 rounded-xl font-bold flex items-center justify-center gap-2 brick-btn-highlight transition-all duration-200 active:scale-95 shadow-lg shadow-primary/20"
+              >
+                <span>TIẾN HÀNH THANH TOÁN (2 SẢN PHẨM)</span>
+                <span class="material-symbols-outlined text-xl"
+                  >arrow_forward</span
+                >
+              </button>
+              <p class="text-center text-[11px] text-on-surface-variant mt-2">
+                Hỗ trợ trả góp 0% lãi suất qua thẻ tín dụng
+              </p>
+            </div>
+            <!-- Trust & Authenticity Badges -->
+            <div
+              class="mt-space-lg pt-space-md border-t border-surface-container-highest space-y-3"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-lg"
+                    data-weight="fill"
+                    >shield</span
+                  >
+                </div>
+                <span class="text-xs font-medium text-on-surface"
+                  >Thanh toán an toàn 100% với chuẩn bảo mật quốc tế</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0"
+                >
+                  <span class="material-symbols-outlined text-lg">sync</span>
+                </div>
+                <span class="text-xs font-medium text-on-surface"
+                  >Đổi trả trong 30 ngày nếu sản phẩm lỗi từ nhà sản xuất</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0"
+                >
+                  <span class="material-symbols-outlined text-lg"
+                    >support_agent</span
+                  >
+                </div>
+                <span class="text-xs font-medium text-on-surface"
+                  >Hỗ trợ kỹ thuật lắp ráp &amp; tìm kiếm mảnh thiếu 24/7</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CROSS-SELL SECTION: Frequently Bought Together (Bento Grid Style) -->
+      <section
+        class="mt-space-xl pt-space-lg border-t border-surface-container-highest"
+      >
+        <div class="flex items-center justify-between mb-space-md">
+          <div>
+            <span
+              class="text-label-sm font-label-sm text-primary font-bold uppercase tracking-wider"
+              >Tối ưu trải nghiệm lắp ráp</span
+            >
+            <h2
+              class="font-headline-lg text-headline-lg text-on-surface font-extrabold"
+            >
+              Sản phẩm thường mua kèm
+            </h2>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center gap-1 text-label-md font-label-md text-primary font-bold hover:underline"
+            href="#"
+          >
+            <span>Xem tất cả phụ kiện</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <!-- Cross-sell Card 1: Khay phân loại mảnh ghép -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-space-md custom-shadow-resting border border-black/5 custom-shadow-lifted transition-all duration-200 flex flex-col justify-between"
+          >
+            <div
+              class="relative w-full aspect-square bg-surface-container-low rounded-lg p-4 mb-space-md flex items-center justify-center overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-contain"
+                data-alt="A modern modular stackable plastic sorting tray organizer for construction toy bricks, sleek white and light gray minimalist finish with multiple neat compartments, displayed in a clean Scandinavian builder studio with bright diffused daylight."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxbOmRBxLMnkj0ovt-YbdiO_fLVceIOkmHPfdeB-v35hRGtHFoktPO44EY4JXX_IiNtIgUx64f2Tc46ARfQ56vb4ghcpiAmf2PpvvtUN7NRVngstl5gNtwBVc1ngL2DK3ghac8pgIUvYIdMiLjmjcAb_ZeaXr6_xsJ-dH1Cn5FmT3rY5su_IYBTfg5vskZ1Y36XDodq3wbMHcQgDv6G9JQvM5VFqrjCdLHABgnXS6I"
+              />
+              <span
+                class="absolute top-2 left-2 bg-surface text-on-surface font-label-sm text-[10px] px-2 py-0.5 rounded shadow-sm font-bold"
+                >PHỤ KIỆN PRO</span
+              >
+            </div>
+            <div>
+              <span
+                class="text-label-sm font-label-sm text-on-surface-variant font-bold"
+                >MÃ: ACC-101 • DỤNG CỤ BUILDER</span
+              >
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 line-clamp-1"
+              >
+                Khay phân loại mảnh ghép LEGO Pro
+              </h3>
+              <p class="text-body-sm text-on-surface-variant mt-1">
+                Hệ thống 4 tầng chia ngăn thông minh, chống xước gạch.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between mt-4 pt-3 border-t border-surface-container-highest"
+            >
+              <div>
+                <span
+                  class="font-headline-sm text-headline-sm text-primary font-extrabold"
+                  >350.000đ</span
+                >
+                <span class="text-xs text-outline line-through ml-1.5"
+                  >450.000đ</span
+                >
+              </div>
+              <button
+                class="bg-surface-container-low hover:bg-primary-container hover:text-on-primary-container text-on-surface px-3 py-2 rounded-lg text-label-md font-label-md font-bold transition-all duration-150 flex items-center gap-1 border border-outline-variant/40"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >add_shopping_cart</span
+                >
+                <span>Thêm</span>
+              </button>
+            </div>
+          </div>
+          <!-- Cross-sell Card 2: Dụng cụ tháo gạch chuyên dụng -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-space-md custom-shadow-resting border border-black/5 custom-shadow-lifted transition-all duration-200 flex flex-col justify-between"
+          >
+            <div
+              class="relative w-full aspect-square bg-surface-container-low rounded-lg p-4 mb-space-md flex items-center justify-center overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-contain"
+                data-alt="An official premium brick separator tool for building blocks, bright orange injection molded plastic with metallic accents, photographed resting on a neutral white desk surface with realistic soft studio shadows and sharp macro detail."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQBXISDFTAMmR283RxvEjRsvRsS6D0T0kcTPT-xK6d-pK7S6LvFvqosg5szWvjaEVy7vmgXNkD4XrkoTZ0Jw_inyXz4mI5IjOWdOenFTsgXUBLy0azINXJqVdK_NmVp_FdJLn-ZKdiHoweG243w_hgRqzOjKWkLnXVfj0nIx2JKx0IGQeglT1H6bUgh1pKCmB1_ad23qtfShoq0CNNceCcb1075TKUygP0kQ3cWfvy"
+              />
+              <span
+                class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container font-label-sm text-[10px] px-2 py-0.5 rounded shadow-sm font-bold"
+                >MUST-HAVE</span
+              >
+            </div>
+            <div>
+              <span
+                class="text-label-sm font-label-sm text-on-surface-variant font-bold"
+                >MÃ: ACC-042 • CHÍNH HÃNG</span
+              >
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 line-clamp-1"
+              >
+                Dụng cụ tháo gạch chuyên dụng Deluxe
+              </h3>
+              <p class="text-body-sm text-on-surface-variant mt-1">
+                Cơ chế kẹp đòn bẩy kép, không gây mẻ cạnh gạch gãy khớp.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between mt-4 pt-3 border-t border-surface-container-highest"
+            >
+              <div>
+                <span
+                  class="font-headline-sm text-headline-sm text-primary font-extrabold"
+                  >99.000đ</span
+                >
+                <span class="text-xs text-outline line-through ml-1.5"
+                  >150.000đ</span
+                >
+              </div>
+              <button
+                class="bg-surface-container-low hover:bg-primary-container hover:text-on-primary-container text-on-surface px-3 py-2 rounded-lg text-label-md font-label-md font-bold transition-all duration-150 flex items-center gap-1 border border-outline-variant/40"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >add_shopping_cart</span
+                >
+                <span>Thêm</span>
+              </button>
+            </div>
+          </div>
+          <!-- Cross-sell Card 3: Hộp mica trưng bày chống bụi -->
+          <div
+            class="bg-surface-container-lowest rounded-xl p-space-md custom-shadow-resting border border-black/5 custom-shadow-lifted transition-all duration-200 flex flex-col justify-between"
+          >
+            <div
+              class="relative w-full aspect-square bg-surface-container-low rounded-lg p-4 mb-space-md flex items-center justify-center overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-contain"
+                data-alt="An ultra-clear high-transparency acrylic display showcase box with a matte black wood base and integrated recessed LED spotlight illumination, engineered for museum-grade brick model presentation on a clean reflective surface."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMSfx0djqwtXvHLzQCMLD2SISLT7qn6eA6mwWfAVt9gVJC-R50qkJzj1HXwqgO3Zc0VJapPrZezXszPXzMdRMWJaCtn4JhonGvzlSDi8dF5E9bv3IaFZGW6jq5kNXgEQuZ-KnJJjawEK_IQwRat2Wv9_UNXTlXX_sOe97zUpHRtZXj7tPET-4qaOR_BG0orOow5qT75e9eMMfbkfowyNmgJOdX1UWVl9K69sBlJTu"
+              />
+              <span
+                class="absolute top-2 left-2 bg-inverse-surface text-surface font-label-sm text-[10px] px-2 py-0.5 rounded shadow-sm font-bold"
+                >SHOWCASE VIP</span
+              >
+            </div>
+            <div>
+              <span
+                class="text-label-sm font-label-sm text-on-surface-variant font-bold"
+                >MÃ: BOX-SP3 • THEO KÍCH THƯỚC</span
+              >
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 line-clamp-1"
+              >
+                Hộp mica trưng bày chống bụi + Đèn LED
+              </h3>
+              <p class="text-body-sm text-on-surface-variant mt-1">
+                Mica nhập khẩu 3mm siêu trong, tích hợp đèn chiếu âm trần.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between mt-4 pt-3 border-t border-surface-container-highest"
+            >
+              <div>
+                <span
+                  class="font-headline-sm text-headline-sm text-primary font-extrabold"
+                  >1.450.000đ</span
+                >
+                <span class="text-xs text-outline line-through ml-1.5"
+                  >1.800.000đ</span
+                >
+              </div>
+              <button
+                class="bg-surface-container-low hover:bg-primary-container hover:text-on-primary-container text-on-surface px-3 py-2 rounded-lg text-label-md font-label-md font-bold transition-all duration-150 flex items-center gap-1 border border-outline-variant/40"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >add_shopping_cart</span
+                >
+                <span>Thêm</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Web Footer (Shared Component) -->
+    <footer
+      class="bg-surface-container dark:bg-surface-container-high mt-space-xl shadow-none"
+    >
+      <div
+        class="w-full mx-auto px-margin py-space-xl max-w-7xl flex flex-col gap-space-lg"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+          <!-- Brand & Description -->
+          <div class="md:col-span-1 flex flex-col gap-2">
+            <span
+              class="font-headline-lg text-headline-lg font-black text-primary dark:text-primary-fixed tracking-tight"
+              >RAMBO STORE</span
+            >
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Hệ thống phân phối đồ chơi LEGO chính hãng hàng đầu Việt Nam. Tận
+              hưởng niềm đam mê sáng tạo bất tận cùng hàng ngàn bộ sưu tập độc
+              quyền.
+            </p>
+          </div>
+          <!-- Links Column 1 -->
+          <div class="flex flex-col gap-2">
+            <span
+              class="font-label-sm text-label-sm uppercase font-bold text-on-surface"
+              >Cam kết dịch vụ</span
+            >
+            <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >100% Chính Hãng</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Giao hàng hỏa tốc</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Đổi trả 30 ngày</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Bảo mật thông tin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links Column 2 -->
+          <div class="flex flex-col gap-2">
+            <span
+              class="font-label-sm text-label-sm uppercase font-bold text-on-surface"
+              >Hỗ trợ khách hàng</span
+            >
+            <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Điều khoản dịch vụ</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Hướng dẫn mua hàng</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Hệ thống showroom</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-on-surface-variant hover:text-on-surface transition-colors"
+                  href="#"
+                  >Tra cứu đơn hàng</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Customer Care & Hotline -->
+          <div class="flex flex-col gap-2">
+            <span
+              class="font-label-sm text-label-sm uppercase font-bold text-on-surface"
+              >Liên hệ hỗ trợ</span
+            >
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Hotline:
+              <strong class="text-primary font-bold"
+                >1900 8888 (8:00 - 21:30)</strong
+              >
+            </p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Email: cskh@rambostore.vn
+            </p>
+            <div class="flex items-center gap-2 mt-2">
+              <span
+                class="px-2 py-1 bg-surface-container-highest rounded text-xs font-bold text-on-surface"
+                >VISA</span
+              >
+              <span
+                class="px-2 py-1 bg-surface-container-highest rounded text-xs font-bold text-on-surface"
+                >MasterCard</span
+              >
+              <span
+                class="px-2 py-1 bg-surface-container-highest rounded text-xs font-bold text-on-surface"
+                >MoMo</span
+              >
+              <span
+                class="px-2 py-1 bg-surface-container-highest rounded text-xs font-bold text-on-surface"
+                >VNPay</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Copyright strip -->
+        <div
+          class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-body-sm text-on-surface-variant text-center gap-2"
+        >
+          <p>
+            © 2024 RAMBO STORE Vietnam. Đối tác phân phối chính hãng LEGO. Giấy
+            phép ĐKKD số 0108888888.
+          </p>
+          <div class="flex items-center gap-4 text-xs">
+            <a class="hover:text-primary transition-colors" href="#"
+              >Chính sách bảo mật</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Quy chế hoạt động</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
