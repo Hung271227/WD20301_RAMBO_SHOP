@@ -1,5 +1,5 @@
 <?php
-// ===== CẤU HÌNH KẾT NỐI DATABASE (XAMPP mặc định: root, không mật khẩu) =====
+
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'rambo_shop2');
 define('DB_USER', 'root');
